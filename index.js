@@ -1,6 +1,5 @@
-const sessionName = "yusril";
-const donet = "https://saweria.co/sansekai";
-const owner = ["6287878817169"]; // Put your number here ex: ["62xxxxxxxxx"]
+const sessionName = "Arale";
+const owner = ["6281359980364"]; // Put your number here ex: ["62xxxxxxxxx"]
 const {
   default: sansekaiConnect,
   useMultiFileAuthState,
@@ -363,3 +362,5 @@ fs.watchFile(file, () => {
   delete require.cache[file];
   require(file);
 });
+
+require("http").createServer((_, res) => res.end("Uptime!")).listen(8080)
